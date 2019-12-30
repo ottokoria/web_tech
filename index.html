@@ -3,24 +3,45 @@
     <head>
         <title>The Religious Soundscapes of London</title>
         <link rel="stylesheet" href="style/style.css">
-        <meta charset="utf-8"/>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+        <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+        <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
     </head>
     <body>
         <div class="wrapper">
-            <header class="header">
-                <h1>The Religious Soundscapes of London</h1>
-                <h2>Preserving the Sonic Heritage of Religious Sites in London</h2>
-		<nav>
-		    <ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="soundscape.html">Soundscapes</a></li>
-			<li><a href="data.html">Data</a></li>
-		    </ul>
-		</nav>
-            </header>
-            <article class="main">
-            </article>
-            <footer class="footer">Footer</footer>
+            <div class="header">
+                <h1>The Religious Soundscapes of London:</h1>
+                <h2>A Site Dedicated Preserving the Sonic Heritage of Religious Site in London</h2>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="soundscape.html">Soundscape</a></li>
+                </ul>
+            </div>
+            <div class="main">
+		<div class="background a">
+                <div class="text">
+                    <h3>Welcome</h3>
+                    <p>This is site is a platform for the mapping of those <i>soundscapes</i> that have defined London’s religious environment. By no means complete, this site, however, presents new methodological avenues for the study of religious sites. In this regard, it is hoped that a platfom such as this, will provide inspiration for scholars of religion to utilize sound as a valid resource for the study of religion.</p>
+                    <h3>Usage</h3>
+                    <p>The usage of this website is very easy. Simple navigate to the «soundscape» page through the top-righ to access a map with overlayed beacons. By pressing a beacon, a popup-up will appear displaying information of the site (via Wikipedia) and playing associated sounds (now with place-holders sourced from freesounds.org.</p>
+                    <h3>Disclaimer</h3>
+                    <p>All content in this site, including related code, is free to use for non-commerical means. To access related data and code, please refer to to the sites associated <a href="https://github.com/ottokoria/web_tech">GitHub</a> page.</p>
+                </div>
+		</div>
+            </div>
+        </div>
+        <div  class="footer">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+        </div>
         </div>
     </body>
 </html>

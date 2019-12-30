@@ -1,94 +1,100 @@
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+}
+
+
 .wrapper {
   display: flex;  
   flex-flow: row wrap;
-  font-weight: bold;
-  text-align: center;
 }
 
 .wrapper > * {
-  padding: 10px;
+  padding: 0px;
   flex: 1 100%;
 }
 
 .header {
-    background: navy;
-    color: white;
-    text-align: left
+    background: #3066c6;
+    color: white;	
+    text-align: center;
 }
 
 .footer {
-    background: navy;
-    color: white;
+  margin: 0;
+  background: #3066c6;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
 }
 
-.main {
-  background-image: url("/home/otto/Dropbox/academic_stuff/kings/modules/3.web technologies/assignments/final_web/assets/church.jpg");
-  height: 400px;
+.main{
+    height: 400px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.background {
+  height: 100%;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10vh;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  border: 5px solid #000;
 }
 
-
-body {
-    padding: 2em;
-      font-family: Arial, Helvetica, sans-serif;
+.a {
+    background-image: url("file:///home/otto/Dropbox/academic_stuff/kings/modules/web_technologies/assignments/final_web/web_tech/assets/church.jpg");
 }
 
-h2{
-  font-style: italic;
+.text {
+  color: white;
 }
 
-html{
-    background-color: black;
+.navigation {
+  list-style: none;
+  margin: 0;
+  background: #304ca0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+ }
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
 }
 
-nav{
-    background: navy;
-}
-
-nav ul{
-    list-style-type: none;
-    padding: 0;
-}
-
-nav a{
+.navigation a:hover {
+    background: #3066c6;
     text-decoration: none;
-    text-align: center;
     color: white;
-    display: block;
-    padding: 10px;
 }
-
-nav a:hover{
-    background-color: grey;
-}
-
-@media all and (min-width: 600px) {
-}
-
-@media all and (min-width: 800px) {
-    .main{
-	flex: 3 0px;
-    }
-
-    .main{order: 2;
-	 }
-
-    .footer{
-	order: 4;
-    }
-
-    nav ul{
-      display: flex;
-      justify-content: flex-end;
-    }
-    
-}
-
-#map {position:absolute;top:0;bottom:0;right:0;left:0;}
 
 #map_283bae84c86046eb8822b3c69eecaa5d {
         position : relative;
@@ -96,4 +102,30 @@ nav a:hover{
         height: 100.0%;
         left: 0.0%;
         top: 0.0%;
-     }
+}
+
+.wrapper_front{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  -webkit-flex-wrap: row wrap;
+  flex-wrap: row wrap;
+}
+
+.front_text {
+  color: white;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.65);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  width: 80%;
+  text-align: center;
+}
+
+@media all and (max-width: 400px) {
+    .text {
+        font-size: 9px;
+    }
+}
