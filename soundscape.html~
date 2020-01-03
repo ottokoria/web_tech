@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>The Religious Soundscapes of London</title>
+        <link rel="stylesheet" href="style/style.css">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+        <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+        <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <h1>Soundscape</h1>
+                <h2>Click on map...</h2>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="soundscape.html">Soundscapes</a></li>
+                        <li><a href="data.html">Data</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <article class="main">
+                <div class="folium-map" id="map_c52058892e244024a88d04a6ddcae8a8" ></div>
+            </article>
+            <footer class="footer">Footer</footer>
+        </div>
+    </body>
+    <script>
+     var bounds = null;
+     var map_c52058892e244024a88d04a6ddcae8a8 = L.map(
+         'map_c52058892e244024a88d04a6ddcae8a8',
+         {center: [51.509865,-0.118092],
+          zoom: 13,
+          maxBounds: bounds,
+          layers: [],
+          worldCopyJump: false,
+          crs: L.CRS.EPSG3857
+         });
+     var tile_layer_1a2274c931854d6398f4eb2290c79975 = L.tileLayer(
+         'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+         {
+             "attribution": null,
+             "detectRetina": false,
+             "maxZoom": 18,
+             "minZoom": 1,
+             "noWrap": false,
+             "subdomains": "abc"
+         }
+     ).addTo(map_c52058892e244024a88d04a6ddcae8a8);
+     var marker_a59a3f3399224198a2f2b10e7e5221c1 = L.marker(
+         [51.5095,-0.1491],
+         {
+             icon: new L.Icon.Default()
+         }
+     )
+                                                    .addTo(map_c52058892e244024a88d04a6ddcae8a8);
+     var popup_fb5b6e38913248c59f91fa7ca947a0b5 = L.popup({maxWidth: '300'});
+     var html_b4238d4ee60842f7852d6535e40a335b = $('<div id="html_b4238d4ee60842f7852d6535e40a335b" style="width: 100.0%; height: 100.0%;"><iframe width="300" height="300" src="https://en.wikipedia.org/w/index.php?title=Church_of_the_Immaculate_Conception,_Farm_Street&printable=yes"></iframe><br><iframe height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/728185600&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></div>')[0];
+     popup_fb5b6e38913248c59f91fa7ca947a0b5.setContent(html_b4238d4ee60842f7852d6535e40a335b);
+     marker_a59a3f3399224198a2f2b10e7e5221c1.bindPopup(popup_fb5b6e38913248c59f91fa7ca947a0b5);
+     var marker_4e8b8029d0be4fd4ba43a6c0fa9cb8fa = L.marker(
+         [51.5201,-0.14],
+         {
+             icon: new L.Icon.Default()
+         }
+     )
+                                                    .addTo(map_c52058892e244024a88d04a6ddcae8a8);
+     var popup_de988a0d2b6146bfa84f2be332d0d2e5 = L.popup({maxWidth: '300'});
+     var html_9bd479cbf446423585d21a0ce26d8939 = $('<div id="html_9bd479cbf446423585d21a0ce26d8939" style="width: 100.0%; height: 100.0%;"><iframe width="300" height="300" src="https://en.wikipedia.org/w/index.php?title=St_Charles_Borromeo_Church,_Westminster&printable=yes"></iframe><br><iframe height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/728185525&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></div>')[0];
+     popup_de988a0d2b6146bfa84f2be332d0d2e5.setContent(html_9bd479cbf446423585d21a0ce26d8939);
+     marker_4e8b8029d0be4fd4ba43a6c0fa9cb8fa.bindPopup(popup_de988a0d2b6146bfa84f2be332d0d2e5);
+     var marker_e4d09c6d004449f9b5b2a66191f8187a = L.marker(
+         [51.510923,-0.122498],
+         {
+             icon: new L.Icon.Default()
+         }
+     )
+                                                    .addTo(map_c52058892e244024a88d04a6ddcae8a8);
+     var popup_4e05a69eb01e4eb59992fc95828d60fa = L.popup({maxWidth: '300'});
+     var html_eee0228d46d34d40a80f55424dfb816c = $('<div id="html_eee0228d46d34d40a80f55424dfb816c" style="width: 100.0%; height: 100.0%;"><iframe width="300" height="300" src="https://en.wikipedia.org/w/index.php?title=Corpus_Christi_Roman_Catholic_Church,_Maiden_Lane&printable=yes"></iframe><br><iframe height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/728185186&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></div>')[0];
+     popup_4e05a69eb01e4eb59992fc95828d60fa.setContent(html_eee0228d46d34d40a80f55424dfb816c);
+     marker_e4d09c6d004449f9b5b2a66191f8187a.bindPopup(popup_4e05a69eb01e4eb59992fc95828d60fa);
+     var marker_5f84d2313d36468eb6da7f62073e34bf = L.marker(
+         [51.51123,-0.13792],
+         {
+             icon: new L.Icon.Default()
+         }
+     )
+                                                    .addTo(map_c52058892e244024a88d04a6ddcae8a8);
+     var popup_495f18990a4840d983bc2a2505024245 = L.popup({maxWidth: '300'});
+     var html_ccaa481359e04e928dfe297da1fcf564 = $('<div id="html_ccaa481359e04e928dfe297da1fcf564" style="width: 100.0%; height: 100.0%;"><iframe width="300" height="300" src="https://en.wikipedia.org/w/index.php?title=Church_of_our_Lady_of_the_Assumption_and_Saint_Gregory&printable=yes"></iframe><br><iframe height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/728185726&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></div>')[0];
+     popup_495f18990a4840d983bc2a2505024245.setContent(html_ccaa481359e04e928dfe297da1fcf564);
+     marker_5f84d2313d36468eb6da7f62073e34bf.bindPopup(popup_495f18990a4840d983bc2a2505024245);
+     var marker_9d2139360d4e40b7b4c02dccf58a94b8 = L.marker(
+         [51.4961,-0.1397],
+         {
+             icon: new L.Icon.Default()
+         }
+     )
+                                                    .addTo(map_c52058892e244024a88d04a6ddcae8a8);
+     var popup_498f13fa4f214343840792c2b0f81404 = L.popup({maxWidth: '300'});
+     var html_b3aeab41424c43379572d549e24b1adc = $('<div id="html_b3aeab41424c43379572d549e24b1adc" style="width: 100.0%; height: 100.0%;"><iframe width="300" height="300" src="https://en.wikipedia.org/w/index.php?title=Westminster_Cathedral&printable=yes"<br><iframe height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/728185555&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></div>')[0];
+     popup_498f13fa4f214343840792c2b0f81404.setContent(html_b3aeab41424c43379572d549e24b1adc);
+     marker_9d2139360d4e40b7b4c02dccf58a94b8.bindPopup(popup_498f13fa4f214343840792c2b0f81404);
+    </script>
+</html>
